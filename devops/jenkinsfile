@@ -5,8 +5,13 @@ pipeline{
         stage("code clonning"){
             step{
                 echo "Clone the coded"
-                git url:"", branch:"main"
+                git url:"https://github.com/Chetan717/python-web-app.git", branch:"main"
             }
+        }
+        stage("code build"){
+            echo "build"
+            sh "cd app"
+            sh "docker build -t djngfirst ."
         }
     }
 }
