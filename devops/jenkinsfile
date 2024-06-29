@@ -1,0 +1,12 @@
+pipeline{
+    agent any
+
+    stages{
+        stage("code clonning"){
+            step{
+                echo "Clone the coded"
+                git url:"", branch:"main"
+            }
+        }
+    }
+}
