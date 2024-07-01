@@ -1,7 +1,6 @@
-version:"3.4"
-services :
-  web :
-    image : chetanhari/my-django:latest
-    ports : 
-       - "8000:8000"
-  
+version: "3.4"
+services:
+  web:
+    image: chetanhari/my-django:latest
+    ports:
+      - "8000:8000"
